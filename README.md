@@ -5,7 +5,7 @@ A small DOS patcher for the High Detail executable (`STARTH.EXE`) of the racing 
 It fixes two related memory corruption bugs in the game's renderer:
 
 - a crash on the **Sunbeach Hill** track, typically near the crane by the harbour
-- a crash directly after crossing the finish line on track Sandrock, after finishing a whole championship, while the camera moves over the car
+- a crash directly after crossing the finish line on track **Sandrock**, after finishing a whole championship, while the camera moves over the car
 - random crashes on other tracks
 
 > This repository contains no game files. You need your own copy of the game.
