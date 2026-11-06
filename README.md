@@ -5,20 +5,24 @@ A small DOS patcher for the High Detail executable (`STARTH.EXE`) of the racing 
 It fixes two related memory corruption bugs in the game's renderer:
 
 - a crash on the **Sunbeach Hill** track, typically near the crane by the harbour
-- a crash directly after crossing the finish line, while the camera moves over the car
+- a crash directly after crossing the finish line on track Sandrock, after finishing a whole championship, while the camera moves over the car
+- random crashes on other tracks
 
 > This repository contains no game files. You need your own copy of the game.
 
 ## Symptoms
 
-The crashes happen at about the same spots, but they can look different each time:
+The main crashes happen at about the same spots at Sunbeach Hill, but they can look different each time:
 
 - a complete freeze
 - a freeze with repeating sound
 - a return to DOS with a DOS/4GW register dump, such as `exception 06h (invalid opcode)`
 - DOSBox closing by itself
 
-The Sunbeach Hill crash is reported to have happened on real DOS machines as well as in DOSBox, so it is not an emulator problem. The Low Detail executable (`STARTL.EXE`) was the usual workaround.
+The Sunbeach Hill crash is reported to have happened on real DOS machines as well as in DOSBox, so it is not an emulator problem. 
+usual workarounds:
+- quit the game before Sunbeach Hill and start the game with zhe Low Detail executable (`STARTL.EXE`)
+- delete or rename MAP5H.DAT in the GFX folder and copy MAP5L.DAT over MAP5H.DAT, then the games loads the low reslution for this track, even the game is startet with STARTH.EXE. But this results in some glitches, where some buldings are not shown
 
 ## Usage
 
