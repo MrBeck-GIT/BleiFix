@@ -80,7 +80,7 @@ DEBUG: Memory breakpoint : 0000:59C38 - 7C -> E6
 
 **Why High Detail only?** In `MAP5H` the object table has 398 entries, so the corrupted slots are in use. In `MAP5L` it has only 360, so at least the slots seen in the crash dumps fall into unused reserve space. This likely explains why `STARTL.EXE` survives, though it was not confirmed separately in the debugger.
 
-### Bug 2: the finish line crash
+### Bug 2: the finish line crash on Sandrock
 
 Before drawing, the renderer builds a list of polygon edges with 24 bytes per screen row. This list grows downward in memory from a fixed address and has room for about 1,200 rows.
 
