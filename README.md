@@ -121,7 +121,7 @@ SHA-256 of the released `BLEIFIX.COM` 1.1: `46e1235a7d41d65dae6d348f57b15c9eedcf
 
 ## Changelog
 
-- **1.1:** Fixes the crash after the finish line. Updates files patched with 1.0. Detects write-protected files. English messages.
+- **1.1:** Fixes the crash after the finish line on Sandrock after complete championship. Updates files patched with 1.0. Detects write-protected files. English messages.
 - **1.0:** Fixes the Sunbeach Hill crash near the crane.
 
 ## Legal
